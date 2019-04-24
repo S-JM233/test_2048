@@ -1,0 +1,63 @@
+*{margin: 0;padding: 0;}
+#interface{
+	width: 480px;
+	height: 480px;
+	background-color: #bbada0;
+	border-radius: 10px;
+	position: relative;
+}
+.grid{
+	width: 100px;
+	height: 100px;
+	border-radius:6px;
+	float: left;
+	margin: 16px 0px 0px 16px;
+	background-color: #ccc0b3;
+}
+.cell{
+	width:100px;
+	height:100px;
+	border-radius:6px;
+	text-align:center;
+	line-height:100px;
+	color:#776e65;
+	font-size:50px;
+	position:absolute;
+}
+#c00,#c01,#c02,#c03{top:16px;}
+#c00,#c10,#c20,#c30{left:16px;}
+#c10,#c11,#c12,#c13{top:132px;}
+#c01,#c11,#c21,#c31{left:132px;}
+#c20,#c21,#c22,#c23{top:248px;}
+#c02,#c12,#c22,#c32{left:248px;}
+#c30,#c31,#c32,#c33{top:364px;}
+#c03,#c13,#c23,#c33{left:364px;}
+.n2{background-color:#eee3da;}
+.n4{background-color:#ede0c8;}
+.n8{background-color:#f2b179;}
+.n16{background-color:#f59563;}
+.n32{background-color:#f67c5f;}
+.n64{background-color:#f65e3b;}
+.n128{background-color:#edcf72;}
+.n256{background-color:#edcc61;}
+.n512{background-color:#9c0;}
+.n1024{background-color:#33b5e5;}
+.n2048{background-color:#09c;}
+.n4096{background-color:#a6c;}
+.n8192{background-color:#93c;}
+.n8,.n16,.n32,.n64,.n128,.n256,.n512,.n1024,.n2048,.n4096,.n8192{color:#fff;}
+.n1024,.n2048,.n4096,.n8192{font-size:35px;}
+@-webkit-keyframes fadeOut {
+	0% {
+	opacity: 0; /*初始状态 透明度为0*/
+	}
+	100% {
+	opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+.fadeOut{
+-webkit-animation-name: fadeOut; /*动画名称*/
+-webkit-animation-duration: 0.7s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/
+}
